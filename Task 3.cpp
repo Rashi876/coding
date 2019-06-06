@@ -6,7 +6,20 @@ main()
 	cout<<"Enter the year";
 	cin>>y;
 	if(y%4==0)
-	cout<<"The entered year is a leap year";
+	{
+		if(y%100==0)
+		{
+			if(y%400==0)
+			cout<<"THE year"<<y<<"is a leap year";
+			else
+			cout<<"the year"<<y<<"is not a leap year";
+			
+		}
+		else
+		cout<<"The year"<<y<<"is a leap year";
+		
+	}
 	else
-	cout<<"The entered year is not a leap year";
+	cout<<"The year"<<y<<"is not a leap year";
 }
+	
